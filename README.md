@@ -1,2 +1,2 @@
-#burdukov.github.io
-My website.
+# burdukow.github.io
+My buisness card website.
