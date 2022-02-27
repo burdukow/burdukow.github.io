@@ -18,8 +18,9 @@ div{display: block;}
 .box{
     border: 3px solid white;
     margin:10px;
-    
+    background-color: black;
 }
+
 .skills{
     font-size: 16pt;
     font-family: 'Montserrat', sans-serif;
@@ -27,6 +28,7 @@ div{display: block;}
     margin: 20px;
     text-align: left;
     margin-top: 5px;
+    padding-bottom:none ;
 }
 .name{
     padding:50px;
@@ -40,5 +42,19 @@ div{display: block;}
     font-weight: 300;
     font-size: 18pt;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.social, a{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top:0;
+    padding-bottom:0;
+}
+.click{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8pt;
+    padding: 10px;
 }
