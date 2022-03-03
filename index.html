@@ -4,24 +4,31 @@
         <meta charset="UTF-8">
         <title>Burdukov</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="scirpt.js"></script>
     </head>
     <body>
-        <div class="box">
-            <div class = "name" id="name">Valeriy Burdukov</div>
-            <div class = "desc">developer</div>
-            <div class="skills">
+
+        <div id="loader">
+            <div class="spinner">
+                <div class="cspinner"></div>
+            </div>
+        </div>
+
+        <div id="box">
+            <div id="name">Valeriy Burdukov</div>
+            <div id = "desc">developer</div>
+            <div id="skills">
                 <li>C++</li>
                 <li>Python</li>
                 <li>Kotlin</li>
                 <li>Lua</li>
                 <li>HTML, CSS, JS</li>
             </div>
-            <div class = "social">
-                <a href="https://vk.com/burdukov"><img src="VK.svg" alt="vk" style="width:42px;height:42px;"></a>
-                <a href="https://github.com/burdukow" class="github"><img src="GitHub.svg" alt="GitHub" style="width:42px;height:42px;"></a>
+            <div id = "social">
+                <a href="https://vk.com/burdukov"><img src="./images/VK.svg" alt="vk" style="width:42px;height:42px;"></a>
+                <a href="https://github.com/burdukow" class="github"><img src="./images/GitHub.svg" alt="GitHub" style="width:42px;height:42px;"></a>
             </div>
-            <div class="click">clickable</div>
+            <div id="click" >(clickable icons)</div>
         </div>
+        <script type="text/javascript" src="./script.js"></script> 
     </body>
 </html>
