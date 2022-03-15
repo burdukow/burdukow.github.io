@@ -18,9 +18,11 @@ div{display: block;}
 #box{
     border: 3px solid white;
     margin:none;
+    padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
     background-color: black;
+    
 }
 
 #skills{

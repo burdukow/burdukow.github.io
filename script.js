@@ -3,4 +3,3 @@ function loader() {
     element.classList.add("hide");
   }
 setTimeout(function(){loader()}, 250);
-
