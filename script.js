@@ -1,5 +1,7 @@
-function loader() {
-    var element = document.getElementById("loader");
-    element.classList.add("hide");
-  }
-setTimeout(function(){loader()}, 500);
+function borderbox(){
+  var border = document.getElementById("borderskills");
+  border.classList.add("show")
+}
+setTimeout(function(){borderbox()},500);
+
+

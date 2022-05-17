@@ -3,12 +3,12 @@
 *{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 body{
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -18,40 +18,64 @@ body{
 div{display: block;}
 
 #box{
-    border: 3px solid;
-    border-radius: 30px;
-    margin:none;
-    padding: 10px;
+    background-color: black;
+    border: 5px solid;
+    padding: 20px;
     padding-top: 0;
     padding-bottom: 0;   
-    animation: boxcolor 5s ease infinite;
-}
-
-@keyframes boxcolor{
-    0%{border-color:#E44D26;}
-    100%{border-color:#F16529;}
 }
 
 #skills{
-    font-size: 16pt;
+    font-size: 24pt;
     font-weight: 300;
-    margin: 20px;
     text-align: left;
-    margin-top: 5px;
     padding-bottom:none ;
+    background: black;
 }
 
+#borderskills{
+    background: black;
+    padding-left: 2px;
+}
+
+#borderskills.show{
+    background:white;
+    transition: all 1000ms cubic-bezier(.540, .086, .000, .980) .2s;
+}
+
+#buttontools{
+    position: relative;
+    background-color: black;
+    border: none;
+    cursor:pointer;
+    border: 5px solid;
+    border-top: none;
+    height: 25px;
+    width: 50px;
+    margin-right: 692.025px;
+    transform: translateY(-150px);
+    z-index: -1;
+    animation: showtools 1s forwards;
+}
+
+@keyframes showtools {
+    0% {transform: translateY(-150px);z-index:-1;}
+    99%{z-index:-1;}
+    100% {transform: translateY(0); z-index:0;}
+  }
+
+
 #name{
-    padding:100px;
+    padding:75px;
     padding-top:10px;
     padding-bottom: 5px;
     font-weight: 400;
-    font-size: 24pt;
+    font-size: 48pt;
 }
 
 #desc{
     font-weight: 300;
-    font-size: 18pt;
+    font-size: 24pt;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -61,7 +85,7 @@ div{display: block;}
     justify-content: center;
     padding: 10px;
     padding-top:0;
-    padding-bottom:5px;
+    padding-bottom:10px;
 }
 
 #text{
@@ -69,40 +93,3 @@ div{display: block;}
     margin: 10px;
 }
 
-#loader{
-    background-color: black;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#loader.hide{
-    bottom: 100%;
-    transition: all 1000ms cubic-bezier(.540, .086, .000, .980) .2s;
-}
-
-#loader .spinner{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-#loader .spinner .cspinner{
-    display: block;
-    width: 64px;
-    height: 64px;
-    transition: all .4s cubic-bezier(.19, 1, .22, .1);
-    animation: spinner 500ms ease infinite;
-    border: solid 4px transparent;
-    border-top-color: white;
-    border-left-color: white;
-    border-radius: 100%;
-}
-
-@keyframes spinner{
-    0%{transform: rotate(0deg);}
-    100%{transform:rotate(360deg);}
-}
