@@ -5,7 +5,7 @@ p{
     font-family: serif;
 
 }
-#paperniy{    animation: 4.25s 1 normal chcolor;}
+#paperniy{font-family: 'Montserrat', sans-serif;    animation: 4.25s 1 normal chcolor;}
 @keyframes chcolor {
     0%{
         color: rgb(0, 0, 0);
