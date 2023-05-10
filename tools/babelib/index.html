@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>the Library of the Babel</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="../header.css">        
+    </head>
+    <body>
+        <header>           
+            <div id="name">/<a href="../../index.html">home</a>/<a href="../index.html">tools</a>/babelib</div>
+        </header>         
+        <div id="box">
+            <button onclick = 'document.getElementById("babelib").innerHTML = generate();'>gen</button>
+            <div class="text">      
+                <p id="babelib"></p>       
+                <script>
+                    const chars = 'AABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz   ,.?!:1234567890;""';
+                    function generate(){
+                        let result = '';
+                        for (let i = 0; i < Math.floor(Math.random() * 100000) + 1; i++ ){
+                            result += chars.charAt(Math.floor(Math.random() * chars.length));
+                        }
+                        return result;
+                    } 
+
+                    document.getElementById("babelib").innerHTML += generate();        
+                </script>      
+            </div>
+        </div>
+        <p id="paperniy">"да здравствует то, благодаря чему мы - несмотря ни на что" <br>© Паперный З.С. </p>        
+    </body>
+</html>

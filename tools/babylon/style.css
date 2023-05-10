@@ -1,0 +1,15 @@
+p{
+    text-align: right;
+    text-decoration: none;
+    font-size: 14pt;
+}
+.text{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    overflow: hidden;
+    padding: 0 25% 0 25%;
+}

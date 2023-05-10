@@ -1,0 +1,41 @@
+#buttons{
+    justify-content: center;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    visibility: hidden;
+    font-size: 2vh;
+    animation: 4.25s 1 normal chcolor;
+}
+@keyframes chcolor {
+    0%{
+        color: rgb(0, 0, 0);
+        visibility:visible;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+.tool{
+    cursor: pointer;
+    font-size: 4vh;
+    margin: 5vh;
+    border: 2px solid white;
+    width: 25vh;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .25s ease-in-out;
+}
+.tool:hover{
+    filter:invert(100%);
+    border: 2px solid black;
+}
